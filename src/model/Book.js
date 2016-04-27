@@ -28,3 +28,20 @@ Book.saveAll = function() {
 
 	if(!error) console.log( numBooks + " books saved.");
 }
+
+Book.loadAll = function() {
+	var books = {};
+	try {
+		if(localStorage.books) {
+			books = JSON.parse(localStorage.books);
+		}
+	} catch (e) {
+		alert("Error!", e);
+	}
+
+	for(prop in books) {
+		Book.instances[prop] = new Book(books[prop]);
+	}
+
+
+}

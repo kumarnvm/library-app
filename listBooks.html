@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="src/ctrl/initialize.js"></script>
+	<script type="text/javascript" src="src/model/Book.js"></script>
+	<script type="text/javascript" src="view/listBooks.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("load", pl.view.listBooks.setupUserInterface);
+	</script>
+</head>
+<body>
+	<h1>Public Library: List all books</h1>
+	<table id="books">
+		<thead>
+			<tr>
+				<td>ISBN</td>
+				<td>Title</td>
+				<td>Year</td>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+</body>
+</html>
