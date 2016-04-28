@@ -42,6 +42,13 @@ Book.loadAll = function() {
 	for(prop in books) {
 		Book.instances[prop] = new Book(books[prop]);
 	}
-
-
 }
+
+Book.add = function(record) {
+	Book.instances[record.isbn] = record;
+}
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script type="text/javascript" src="src/ctrl/initialize.js"></script>
+    <script type="text/javascript" src="src/model/Book.js"></script>
+    <script type="text/javascript" src="view/createBook.js"></script>
+    <script type="text/javascript">
+     window.addEventListener("load", pl.view.createBook.setupUserInterface);
+    </script>
+</head>
+<body>
+	<h1>Public Library: Create a new book record</h1>
+	<nav><a href="index.html">Go to home page</a></nav>
+	<form id="book">
+		<div>
+			<label for="isbn">ISBN:</label>
+			<input type="text" id="isbn"></input>
+		</div>
+		<div>
+			<label for="title">Title:</label>
+			<input type="text" id="title"></input>
+		</div>
+		<div>
+			<label for="year">Year:</label>
+			<input type="text" id="year"></input>			
+		</div>
+		<button id="commit" type="button" name="commit">Save</button>
+	</form>
+</body>
+</html>
